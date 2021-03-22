@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/Songs-project-Frontend/static/js/main.e16e14a3.chunk.js",
+    "main.js.map": "/Songs-project-Frontend/static/js/main.e16e14a3.chunk.js.map",
+    "runtime-main.js": "/Songs-project-Frontend/static/js/runtime-main.c4d485ac.js",
+    "runtime-main.js.map": "/Songs-project-Frontend/static/js/runtime-main.c4d485ac.js.map",
+    "static/js/2.84692813.chunk.js": "/Songs-project-Frontend/static/js/2.84692813.chunk.js",
+    "static/js/2.84692813.chunk.js.map": "/Songs-project-Frontend/static/js/2.84692813.chunk.js.map",
+    "index.html": "/Songs-project-Frontend/index.html",
+    "static/js/2.84692813.chunk.js.LICENSE.txt": "/Songs-project-Frontend/static/js/2.84692813.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c4d485ac.js",
+    "static/js/2.84692813.chunk.js",
+    "static/js/main.e16e14a3.chunk.js"
+  ]
+}
