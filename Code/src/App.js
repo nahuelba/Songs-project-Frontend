@@ -36,9 +36,36 @@ const App = () =>{
         try{
             //Get song
             const api = await fetch('https://songs-project-backend.herokuapp.com/songoftheday/');
-            const songoftheday = await api.json();
-            setSong(songoftheday[0]);
-
+            const response = await api.json();
+            if(response.length>0){
+                setSong(response[0]);
+            }else{
+                setSong(
+                    {
+                        "id": 39,
+                        "composer": {
+                            "interpreter_name": "Wayne Shorter",
+                            "interpreter_image": "https://songs-project-backend.herokuapp.com/media/artistimages/Wayne_Shorter.jpg"
+                        },
+                        "links": [
+                            {
+                                "interpreters": [
+                                    {
+                                        "interpreter_name": "Wayne Shorter",
+                                        "interpreter_image": "https://songs-project-backend.herokuapp.com/media/artistimages/Wayne_Shorter.jpg"
+                                    }
+                                ],
+                                "embed_youtube_link": "https://www.youtube.com/embed/k0q8mGUHJVQ",
+                                "embed_spotify_link": "https://open.spotify.com/embed/track/4W7mDQgJwaLNHuweyq5Yzj"
+                            }
+                        ],
+                        "song_title": "Yes or no",
+                        "date_song": "30-03"
+                    }
+    
+                )
+            }
+            
             
             setChecked(true);
         }catch(err){
@@ -63,7 +90,7 @@ const App = () =>{
                             "embed_spotify_link": "https://open.spotify.com/embed/track/4W7mDQgJwaLNHuweyq5Yzj"
                         }
                     ],
-                    "song_title": "Yes and no",
+                    "song_title": "Yes or no",
                     "date_song": "30-03"
                 }
 
